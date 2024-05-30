@@ -16,7 +16,7 @@ export const app = express();
 
 // Set CORS headers
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:5173"); // Allow requests from this origin
+  res.header("Access-Control-Allow-Origin", "https://advertisement.vercel.app"); // Allow requests from this origin
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, PATCH"); // Allow specified HTTP methods
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization"); // Allow specified headers
   res.header("Access-Control-Allow-Credentials", "true"); // Allow credentials
@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 
 // CORS middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // Allow requests from this origin
+  origin: 'https://advertisement.vercel.app', // Allow requests from this origin
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], // Allow specified HTTP methods
   credentials: true, // Allow credentials (cookies, authorization headers)
 }));
