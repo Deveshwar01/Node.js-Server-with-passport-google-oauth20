@@ -30,7 +30,7 @@ export const isAuthenticated = async (req, res, next) => {
 
         // Determine the user's role based on their email domain
         const domain = user.email.split('@')[1];
-        if (domain === "girsoftware.com") {
+        if (domain === "voiaxis") {
             user.role = 'admin';
         } else {
             user.role = 'user';
