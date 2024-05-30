@@ -30,11 +30,7 @@ export const isAuthenticated = async (req, res, next) => {
 
         // Determine the user's role based on their email domain
         const domain = user.email.split('@')[1];
-<<<<<<< HEAD
         if (domain === "dummyAdmin.com") {
-=======
-        if (domain === "voiaxis.com") {
->>>>>>> 11c67678cadd09269a4635a30b3d4c2b88f07bd8
             user.role = 'admin';
         } else {
             user.role = 'user';
