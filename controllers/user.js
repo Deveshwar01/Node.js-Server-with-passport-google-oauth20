@@ -58,7 +58,7 @@ export const Register = async (req, res, next) => {
 
         // Determine the role based on email domain
         const domain = email.split('@')[1];
-        const role = (domain === 'girsoftware.com') ? 'admin' : 'user';
+        const role = (domain === 'dummyAdmin.com') ? 'admin' : 'user';
 
         // Hash password
         const hashedPassword = await bcrypt.hash(password, 10);
